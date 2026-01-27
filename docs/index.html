@@ -14,7 +14,7 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-  <base href="/pt_solution/" />
+  <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -33,6 +33,21 @@
 
   <title>UPCORE | PT 솔루션의 새로운 시작</title>
   <link rel="manifest" href="manifest.json">
+
+  <link rel="preload" href="assets/fonts/WantedSansStdVariable.woff2" as="font" type="font/woff2" crossorigin>
+
+  <style>
+    @font-face {
+      font-family: 'WantedSansStdVariable';
+      src: url('assets/fonts/WantedSansStdVariable.woff2') format('woff2');
+      font-display: block;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'WantedSansStdVariable', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+  </style>
 </head>
 <body>
   <script src="flutter_bootstrap.js" async></script>
